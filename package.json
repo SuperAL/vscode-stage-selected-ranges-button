@@ -1,0 +1,53 @@
+{
+  "name": "stage-selected-ranges-button",
+  "displayName": "Stage Selected Ranges Button",
+  "description": "Automatically shows a Stage Selected Ranges button after you select text in a Git diff.",
+  "version": "0.0.1",
+  "publisher": "AlessiaLi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperAL/vscode-stage-selected-ranges-button.git"
+  },
+  "homepage": "https://github.com/SuperAL/vscode-stage-selected-ranges-button",
+  "bugs": {
+    "url": "https://github.com/SuperAL/vscode-stage-selected-ranges-button/issues"
+  },
+  "icon": "images/icon.png",
+  "keywords": [
+    "git",
+    "stage",
+    "diff",
+    "source-control"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "categories": [
+    "SCM Providers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "package:vsix": "npx @vscode/vsce package",
+    "publish:marketplace": "npx @vscode/vsce publish"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "selectionStageRanges.stageSelectedRanges",
+        "title": "Stage Selected Ranges",
+        "category": "Git"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.0"
+  }
+}

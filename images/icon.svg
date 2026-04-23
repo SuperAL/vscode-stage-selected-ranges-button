@@ -1,0 +1,52 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="url(#bgGradient4c)"/>
+
+  <!-- Gradient definition (Modern blue-teal theme) -->
+  <defs>
+    <linearGradient id="bgGradient4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Git logo inspired hexagon -->
+  <path d="M 128 45 L 185 80 L 185 150 L 128 185 L 71 150 L 71 80 Z"
+        fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Diff view window: LARGER - x=50, y=55, width=156, height=130 (from 146x120) -->
+  <rect x="50" y="55" width="156" height="130" rx="8" fill="#FFFFFF" opacity="0.96"/>
+
+  <!-- Minus line (deletion) - 12px from top, 12px from left -->
+  <rect x="62" y="67" width="4" height="14" rx="2" fill="#EF5350" opacity="0.7"/>
+  <line x1="72" y1="74" x2="175" y2="74" stroke="#AAAAAA" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Plus indicator for all 3 added lines - 12px from left -->
+  <rect x="62" y="95" width="4" height="66" rx="2" fill="#66BB6A"/>
+
+  <!-- Selection highlight box - blue border around TOP 2 of 3 lines (offset from + sign) -->
+  <rect x="69" y="94" width="126" height="46" rx="4"
+        fill="none" stroke="#2196F3" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Green line 1 (selected) - inside blue box -->
+  <rect x="72" y="97" width="120" height="18" rx="2" fill="#E8F5E9"/>
+  <line x1="78" y1="106" x2="150" y2="106" stroke="#66BB6A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Green line 2 (selected) - inside blue box -->
+  <rect x="72" y="121" width="120" height="18" rx="2" fill="#E8F5E9"/>
+  <line x1="78" y1="130" x2="185" y2="130" stroke="#66BB6A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Green line 3 (NOT selected) - outside blue box -->
+  <rect x="72" y="143" width="120" height="18" rx="2" fill="#E8F5E9"/>
+  <line x1="78" y1="152" x2="170" y2="152" stroke="#66BB6A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Context line (unchanged) - 12px from bottom -->
+  <line x1="72" y1="170" x2="160" y2="170" stroke="#AAAAAA" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Stage badge with glow effect -->
+  <circle cx="195" cy="195" r="40" fill="#66BB6A" opacity="0.3"/>
+  <circle cx="195" cy="195" r="33" fill="#66BB6A" stroke="#FFFFFF" stroke-width="4"/>
+  <!-- Plus symbol -->
+  <line x1="195" y1="180" x2="195" y2="210" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="180" y1="195" x2="210" y2="195" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+</svg>

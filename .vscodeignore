@@ -1,0 +1,6 @@
+.git/**
+.github/**
+.qodo/**
+.vscode/**
+*.vsix
+.gitignore
