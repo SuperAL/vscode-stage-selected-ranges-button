@@ -25,7 +25,7 @@ The extension calls VS Code's built-in `git.stageSelectedRanges` command and lea
 
 ## Install
 
-### From VSIX
+### From VSIX (Local Testing)
 
 1. Package the extension:
 
@@ -33,7 +33,17 @@ The extension calls VS Code's built-in `git.stageSelectedRanges` command and lea
 npm run package:vsix
 ```
 
-2. In VS Code, run `Extensions: Install from VSIX...`
+2. Install using one of these methods:
+
+**Method A: VS Code UI**
+- Open Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+- Click the `...` menu → `Install from VSIX...`
+- Select the `.vsix` file
+
+**Method B: Command Line**
+```bash
+code --install-extension stage-selected-ranges-button-0.0.1.vsix
+```
 
 ### From Marketplace
 
